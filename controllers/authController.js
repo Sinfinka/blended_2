@@ -16,4 +16,6 @@ export const register = controllerDecorator(async (req, res) => {
   res.send(newUser);
 });
 
-export const getUser = (req, res) => {};
+export const getUser = (req, res) => {
+  res.send(req.user);
+};
